@@ -8,7 +8,7 @@ const citationSchema = new mongoose.Schema({
 
 const chatMessageSchema = new mongoose.Schema({
   sessionId: { type: String, required: true, index: true },
-  role: { type: String, enum: ['user', 'assistant'], required: true },
+   role: { type: String, enum: ['user', 'assistant'], required: true },
   content: { type: String, required: true },
   citations: [citationSchema],
   createdAt: { type: Date, default: Date.now },

@@ -20,4 +20,6 @@ const documentChunkSchema = new mongoose.Schema({
 // Index: { "embedding": "vectorSearch", dimensions: 768, similarity: "cosine" }
 documentChunkSchema.index({ documentId: 1, chunkIndex: 1 }, { unique: true });
 
+documentChunkSchema.index({ embedding: "vectorSearch" }, { dimensions: 768, similarity: "cosine" });
+
 export default mongoose.model('DocumentChunk', documentChunkSchema);
