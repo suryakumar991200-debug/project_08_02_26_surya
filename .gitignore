@@ -1,0 +1,109 @@
+# =============================================================================
+# OpsMind AI - .gitignore
+# Stack: Node.js monorepo | React + Vite (frontend) | Express + MongoDB (backend)
+# =============================================================================
+
+# ------------------------------------
+# Dependencies
+# ------------------------------------
+node_modules/
+.pnp
+.pnp.js
+
+# ------------------------------------
+# Environment Variables (SENSITIVE)
+# ------------------------------------
+.env
+.env.local
+.env.development
+.env.production
+.env.staging
+backend/.env
+frontend/.env
+
+# ------------------------------------
+# Build Outputs
+# ------------------------------------
+dist/
+build/
+frontend/dist/
+frontend/build/
+
+# ------------------------------------
+# Vite Cache
+# ------------------------------------
+.vite/
+frontend/.vite/
+
+# ------------------------------------
+# Logs
+# ------------------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ------------------------------------
+# Uploaded Files (user content)
+# ------------------------------------
+backend/uploads/
+uploads/
+*.pdf
+*.docx
+*.xlsx
+*.csv
+
+# ------------------------------------
+# Temporary / Test Files
+# ------------------------------------
+backend/dummy.pdf
+backend/test.pdf
+backend/sample.pdf
+backend/models.json
+backend/models_list.txt
+backend/detailed_models.txt
+backend/test_stream.js
+backend/test_watch.js
+
+# ------------------------------------
+# OS Generated
+# ------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ------------------------------------
+# IDE / Editor
+# ------------------------------------
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*.bak
+
+# ------------------------------------
+# Coverage & Testing
+# ------------------------------------
+coverage/
+.nyc_output/
+*.lcov
+
+# ------------------------------------
+# Misc
+# ------------------------------------
+.cache/
+.parcel-cache/
+.turbo/
+*.tsbuildinfo
