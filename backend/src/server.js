@@ -37,7 +37,7 @@ app.use((err, req, res, next) => {
   console.error('Server error:', err.message);
   res.status(500).json({ error: err.message || 'Something went wrong' });
 });
-
+app.use('/api/user', userRoutes);
 const PORT = parseInt(process.env.PORT, 10) || 5000;
 
 function startServer(port) {
