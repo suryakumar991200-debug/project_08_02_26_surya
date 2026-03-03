@@ -10,7 +10,7 @@ await connectDB();
 const app = express();
 app.use(cors({ origin: process.env.FRONTEND_URL || '*', credentials: true }));
 app.use(express.json());
-
+// app.use(kjfjksj)
 // Request logger
 app.use((req, res, next) => {
   console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
