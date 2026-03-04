@@ -41,7 +41,7 @@ app.use((err, req, res, next) => {
 const PORT = parseInt(process.env.PORT, 10) || 5000;
 
 function startServer(port) {
-  const server = app.listen(port, '0.0.0.0', () => {
+  const server = app.listen(port, () => {
     console.log(`🚀 OpsMind AI backend running on http://localhost:${port}`);
   });
 
