@@ -12,6 +12,7 @@ export default function Layout({ children }) {
         <nav className={styles.nav}>
           <NavLink to="/" className={({ isActive }) => (isActive ? styles.navActive : '')} end>
             Chat
+            {/* jfgkjsk */}
           </NavLink>
           <NavLink to="/upload" className={({ isActive }) => (isActive ? styles.navActive : '')}>
             Upload
