@@ -48,9 +48,11 @@ function startServer(port) {
   server.on('error', (err) => {
     if (err.code === 'EADDRINUSE') {
       console.warn(`⚠️ Port ${port} is in use, trying ${port + 1}...`);
+      
       startServer(port + 1);
     } else {
       console.error('❌ Server startup error:', err.message);
+      console.log("error occcured while starting the server")
     }
   });
 }
